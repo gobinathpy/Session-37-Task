@@ -1,0 +1,54 @@
+CREATE TABLE students(
+SNo INT NOT NULL primary Key,
+StudentName TEXT NOT NULL,
+Email TEXT NOT NULL,
+Qualification TEXT NOT NULL
+);
+INSERT INTO students VALUES
+(1,"Ramesh","Ramesh@gogo.com","B.E"),
+(2,"Suresh","Suresh@gogo.com","B SC"),
+(3,"Rajesh","Rajesh@gogo.com","MBA"),
+(4,"Suman","Suman@gogo.com","B Ed"),
+(5,"Ganesh","Ganesh@gogo.com","M tech");
+
+CREATE TABLE batch(
+SNo INT NOT NULL primary Key,
+BatchName TEXT NOT NULL,
+Course TEXT NOT NULL,
+Coordinator TEXT NOT NULL,
+Language TEXT NOT NULL,
+NoOfStudents INT NOT NULL
+);
+INSERT INTO batch VALUES 
+(1,"B29WD","MERN Stack","vengatesh","English",60),
+(2,"B30WE","MEAN Stack","vengatesh","Tamil",20),
+(3,"B30WD","Ethical Hacking","vengatesh","English",56),
+(4,"B31WD","MEAN Stack","vengatesh","Tamil",50),
+(5,"B31WE","MERN Stack","vengatesh","Tamil",25);
+
+CREATE TABLE task(
+Topic TEXT NOT NULL,
+TaskDate DATE NOT NULL,
+NoOfStudentsSubmitted INT NOT NULL,
+Remaining INT NOT NULL
+);
+
+INSERT INTO task VALUES
+("HTML", 2020-10-11,6,10),
+("React js",2020-10-12, 7,9),
+("BootStrap",2020-10-13,1,15),
+("Mongodb",2020-10-14,5,11),
+("SQL",2020-10-15,3,13);
+
+CREATE TABLE mentors(
+SNo INT NOT NULL primary Key,
+Name TEXT NOT NULL,
+Field TEXT NOT NULL,
+Language TEXT NOT NULL
+);
+INSERT INTO mentors VALUES 
+(1,"Ragav","MERN Stack","English and Tamil"),
+(2,"Lavish","Front End","English"),
+(3,"Ravi","Ethical Hacking","Tamil"),
+(4,"Mohan","Back End","English and Tamil"),
+(5,"Soundar","MEAN Stack","English and Tamil");
